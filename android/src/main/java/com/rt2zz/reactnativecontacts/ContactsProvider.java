@@ -199,13 +199,6 @@ public class ContactsProvider {
        return null;
     }
 
-    public Integer getContactsCount() {
-        Cursor cursor =  contentResolver.query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
-        int count = cursor.getCount();
-        
-        return count;
-    }
-
     public WritableArray getContacts() {
         Map<String, Contact> justMe;
         {

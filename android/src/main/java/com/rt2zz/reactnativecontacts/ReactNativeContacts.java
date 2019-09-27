@@ -23,6 +23,9 @@ public class ReactNativeContacts implements ReactPackage {
         return modules;
     }
 
+
+
+
     public List<Class<? extends JavaScriptModule>> createJSModules() { 
         return Collections.emptyList(); 
     }
